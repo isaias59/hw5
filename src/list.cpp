@@ -159,4 +159,19 @@ Node* last(Node* head) {
     return head;
 }
 
+int compare(Node* lhs, Node* rhs, int n) {
+        for (int i = 0; i < n && lhs && rhs; ++i) {
+            if (lhs->data != rhs->data) {
+                return lhs->data < rhs->data ? -1 : 1;
+            }
+            lhs = lhs->next;
+            rhs = rhs->next;
+        }
+        if (!lhs && !rhs) return 0;
+        if (!lhs) return -1;
+        if (!rhs) return 1;
+        return 0; 
+    }
+
+
 } 
