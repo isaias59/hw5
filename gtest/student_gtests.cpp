@@ -34,7 +34,7 @@ TEST(ListTests, Length) {
 // Add remaining tests below. All tests should follow
 // the format of `TEST(ListTests, <TestName>){}`.
 
-TEST(ListTests, ReverseList) {
+/*TEST(ListTests, ReverseList) {
     Node* const head = list::from_string("foo");
     Node* reversed_head = list::reverse(head);
     
@@ -51,5 +51,9 @@ TEST(ListTests, ReverseList) {
     ASSERT_EQ(node->next, nullptr);
     
     list::free(reversed_head);
+}*/
+
+TEST(ListTests, ReplaceMe) {
+    EXPECT_TRUE(false);
 }
 
